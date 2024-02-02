@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados de la Consulta</title>
+</head>
+<body>
+    <h1>Resultados de la Consulta</h1>
+    <table border="1">
+        <tr>
+            <th>Número de Pedido</th>
+            <th>Nombre del Cliente</th>
+            <th>Producto</th>
+            <th>Precio</th>
+        </tr>
+        {% for pedido in resultados %}
+        <tr>
+            <td>{{ pedido[1] }}</td>
+            <td>{{ pedido[2] }}</td>
+            <td>{{ pedido[3] }}</td>
+            <td>{{ pedido[4] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
+
