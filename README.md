@@ -16,6 +16,7 @@ Crear un nuevo pedido
 Mostrar la lista de pedidos
 Modificar un pedido existente
 Eliminar un pedido
+Genera ticket del pedido
 
 Módulo de Clientes:
 Agregar un nuevo cliente

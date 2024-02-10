@@ -77,6 +77,7 @@ def eliminar_menu(base_datos_menu):
 
 
 def mostrar_menu():
+    #Muestra el menú de opciones
     print("Menú:")
     print("1. Ver lista de productos en el Menú")
     print("2. Agregar producto al Menú")
@@ -86,6 +87,8 @@ def mostrar_menu():
     print("----------------------------")
 
 def main():
+    #Direccionar a la funcionalidad correspondiente
+    
     base_datos_menu = BaseDatosMenu()
     
     while True:
@@ -110,4 +113,9 @@ def main():
     base_datos_menu.cerrar_conexion()
 
 if __name__ == "__main__":
+    main()
+  
+  
+  
+    
     main()

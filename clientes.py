@@ -83,6 +83,7 @@ def eliminar_cliente(base_datos_clientes):
 
 
 def mostrar_menu():
+    #Mostrar menu de clientes
     print("Menú:")
     print("1. Ver lista de clientes")
     print("2. Agregar cliente")
@@ -92,6 +93,7 @@ def mostrar_menu():
     print("----------------------------")
 
 def main():
+    #Direccionar a la funcionalidad seleccionada por el usuario
     base_datos_clientes = BaseDatosClientes()
     
     
@@ -113,7 +115,7 @@ def main():
             break
         else:
             print("Opción inválida. Por favor, seleccione una opción válida.")
-
+    
     base_datos_clientes.cerrar_conexion()
 
 if __name__ == "__main__":
