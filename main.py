@@ -1,9 +1,7 @@
 #Módulo Main
-import pedidos
-import menu
-import clientes
-import clientes
-import menu
+from pedidos import BaseDatosPedidos
+from clientes import BaseDatosClientes
+from menu import BaseDatosMenu
 
 def main():
     """Imprimir un menú que permite al usuario elegir la opción deseada y se direcciona al módulo seleccionado
@@ -20,13 +18,16 @@ def main():
         #Mandar mensaje de la opción seleccionada y direccionar al módulo correspondiente
         if opcion == '1':
             print("Has seleccionado Pedidos")
-            pedidos.main()
+            pedidos=BaseDatosPedidos()
+            pedidos.gestion_pedidos()
         elif opcion == '2':
             print("Has seleccionado Clientes")
-            clientes.main()
+            clientes=BaseDatosClientes()
+            clientes.gestion_clientes()
         elif opcion == '3':
             print("Has seleccionado Menú")
-            menu.main()
+            menu=BaseDatosMenu()
+            menu.gestion_menu()
         elif opcion == '4':
             print("Hasta Luego!!!!")
             break

@@ -1,0 +1,10 @@
+Pedido: 2
+Cliente: Manuel
+Producto: Pastel
+Precio: 70
+-------------------------
+Pedido: 3
+Cliente: María
+Producto: Refresco
+Precio: 50
+-------------------------
